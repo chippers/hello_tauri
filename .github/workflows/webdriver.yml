@@ -39,7 +39,7 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: install
-          args: --git "https://github.com/tauri-apps/tauri" --branch "feat/webdriver"
+          args: --git "https://github.com/tauri-apps/tauri" --branch "feat/webdriver" tauri-driver
 
       - name: Cache ~/.cargo/bin/
         uses: actions/cache@v1
