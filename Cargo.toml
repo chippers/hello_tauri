@@ -10,10 +10,12 @@ version = "1.0.0-beta.0"
 default-features = false
 
 [dependencies.tauri]
-git = "https://github.com/tauri-app/tauri"
-branch = "feat/webdriver"
-default-features = false
+path = "../../tauri-apps/tauri/core/tauri"
 features = [ "wry", "custom-protocol" ]
+
+[dependencies.wry]
+version = "*"
+features = [ "webdriver" ]
 
 [profile.release]
 incremental = false
@@ -21,3 +23,9 @@ codegen-units = 1
 panic = "abort"
 opt-level = "s"
 lto = true
+
+# use the custom branch in wry
+[patch.crates-io.wry]
+git = "https://github.com/tauri-apps/wry"
+branch = "feat/webdriver"
+

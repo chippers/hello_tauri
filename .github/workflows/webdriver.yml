@@ -1,0 +1,35 @@
+on: [ push ]
+
+name: WebDriver
+
+jobs:
+  build_and_test:
+    name: Hello Tauri
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Rust stable
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Cargo build
+        uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --release
+
+      - name: Node v16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+
+      - name: Yarn install
+        run: yarn
+        working-directory: webdriver/
+
+      - name: Yarn test
+        run: yarn test
+        working-directory: webdriver/
