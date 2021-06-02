@@ -2797,6 +2797,7 @@ dependencies = [
 [[package]]
 name = "tauri"
 version = "1.0.0-beta.1"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#5f5b2f28766381f4c2e2d4051ba636ed05ae0e67"
 dependencies = [
  "base64",
  "bincode",
@@ -2850,6 +2851,7 @@ dependencies = [
 [[package]]
 name = "tauri-codegen"
 version = "1.0.0-beta.0"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#5f5b2f28766381f4c2e2d4051ba636ed05ae0e67"
 dependencies = [
  "blake3",
  "proc-macro2",
@@ -2865,6 +2867,7 @@ dependencies = [
 [[package]]
 name = "tauri-macros"
 version = "1.0.0-beta.1"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#5f5b2f28766381f4c2e2d4051ba636ed05ae0e67"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2875,6 +2878,7 @@ dependencies = [
 [[package]]
 name = "tauri-runtime"
 version = "0.1.1"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#5f5b2f28766381f4c2e2d4051ba636ed05ae0e67"
 dependencies = [
  "serde",
  "serde_json",
@@ -2886,6 +2890,7 @@ dependencies = [
 [[package]]
 name = "tauri-runtime-wry"
 version = "0.1.1"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#5f5b2f28766381f4c2e2d4051ba636ed05ae0e67"
 dependencies = [
  "image",
  "tauri-runtime",
@@ -2897,6 +2902,7 @@ dependencies = [
 [[package]]
 name = "tauri-utils"
 version = "1.0.0-beta.0"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#5f5b2f28766381f4c2e2d4051ba636ed05ae0e67"
 dependencies = [
  "heck",
  "html5ever",

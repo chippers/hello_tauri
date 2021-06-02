@@ -10,7 +10,8 @@ version = "1.0.0-beta.0"
 default-features = false
 
 [dependencies.tauri]
-path = "../../tauri-apps/tauri/core/tauri"
+git = "https://github.com/tauri-apps/tauri"
+branch = "feat/webdriver"
 features = [ "wry", "custom-protocol" ]
 
 [dependencies.wry]
