@@ -41,15 +41,6 @@ jobs:
           command: install
           args: --git "https://github.com/tauri-apps/tauri" --branch "feat/webdriver" tauri-driver
 
-      - name: Cache ~/.cargo/bin/
-        uses: actions/cache@v2
-        with:
-          path: ~/.cargo/bin/
-          key: ${{ runner.os }}-cargo-plugins
-
-      - name: Start tauri-driver
-        run: ~/.cargo/bin/tauri-driver &
-
       - name: Yarn test
         run: yarn test --runInBand
         working-directory: webdriver/
