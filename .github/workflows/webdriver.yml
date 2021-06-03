@@ -42,5 +42,5 @@ jobs:
           args: --git "https://github.com/tauri-apps/tauri" --branch "feat/webdriver" tauri-driver
 
       - name: Yarn test
-        run: xvfb-run yarn test --runInBand
+        run: xvfb-run yarn test --silent --runInBand
         working-directory: webdriver/
