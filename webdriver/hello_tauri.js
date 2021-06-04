@@ -18,8 +18,9 @@ async function browser(callback) {
     },
   });
 
-  await callback(browser);
+  const assertions = await callback(browser);
   await browser.closeWindow();
+  assertions()
 }
 
 module.exports = browser;
