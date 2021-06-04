@@ -3,9 +3,12 @@ on: [ push ]
 name: WebDriver
 
 jobs:
-  setup:
+  test:
     name: Setup
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        webdriver-test: [ jest, webdriverio ]
     steps:
       - uses: actions/checkout@v2
 
@@ -20,62 +23,29 @@ jobs:
           toolchain: stable
           components: clippy, rustfmt
 
-  rustfmt:
-    needs: setup
-    name: Rustfmt
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
       - name: Rustfmt
         uses: actions-rs/cargo@v1
         with:
           command: fmt
           args: --all -- --check
 
-  clippy:
-    needs: setup
-    name: Clippy
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
       - name: Clippy
         uses: actions-rs/cargo@v1
         with:
           command: clippy
           args: -- -D warnings
 
-  test:
-    needs: setup
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
       - name: Cargo test
         uses: actions-rs/cargo@v1
         with:
           command: test
 
-  build:
-    needs: setup
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
       - name: Cargo build
         uses: actions-rs/cargo@v1
         with:
           command: build
           args: --release
 
-  webdriver:
-    needs: build
-    name: WebDriver
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        webdriver-test: [ jest, webdriverio ]
-    steps:
-      - uses: actions/checkout@v2
       - name: Node v16
         uses: actions/setup-node@v1
         with:
