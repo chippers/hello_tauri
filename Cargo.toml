@@ -14,10 +14,6 @@ git = "https://github.com/tauri-apps/tauri"
 branch = "feat/webdriver"
 features = [ "wry", "custom-protocol" ]
 
-[dependencies.wry]
-version = "*"
-features = [ "webdriver" ]
-
 [profile.release]
 incremental = false
 codegen-units = 1
