@@ -1,0 +1,17 @@
+{
+  "name": "hello_tauri_webdriver",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "format": "prettier --write \"./**/*.js\""
+  },
+  "devDependencies": {
+    "jest": "^27.0.3",
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "webdriverio": "^7.7.2"
+  }
+}

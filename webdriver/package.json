@@ -1,16 +1,10 @@
 {
-  "name": "hello_tauri_webdriver",
+  "name": "hello_tauri_webdriver_tests",
   "version": "1.0.0",
+  "description": "A workspace containing different ways to test Tauri applications with a WebDriver client.",
   "license": "Apache-2.0",
-  "scripts": {
-    "test": "jest",
-    "format": "prettier --write \"./**/*.js\""
-  },
-  "devDependencies": {
-    "jest": "^27.0.3",
-    "prettier": "^2.3.0"
-  },
-  "dependencies": {
-    "webdriverio": "^7.7.2"
-  }
+  "private": true,
+  "workspaces": [
+    "jest"
+  ]
 }

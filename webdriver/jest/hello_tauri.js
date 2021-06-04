@@ -20,7 +20,7 @@ async function browser(callback) {
 
   const assertions = await callback(browser);
   await browser.closeWindow();
-  assertions()
+  assertions();
 }
 
 module.exports = browser;
