@@ -7,8 +7,7 @@ jobs:
     name: Setup
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: Tauri dependencies
         run: |
@@ -26,6 +25,7 @@ jobs:
     name: Rustfmt
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Rustfmt
         uses: actions-rs/cargo@v1
         with:
@@ -37,6 +37,7 @@ jobs:
     name: Clippy
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Clippy
         uses: actions-rs/cargo@v1
         with:
@@ -48,6 +49,7 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Cargo test
         uses: actions-rs/cargo@v1
         with:
@@ -58,6 +60,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Cargo build
         uses: actions-rs/cargo@v1
         with:
@@ -72,6 +75,7 @@ jobs:
       matrix:
         webdriver-test: [ jest, webdriverio ]
     steps:
+      - uses: actions/checkout@v2
       - name: Node v16
         uses: actions/setup-node@v1
         with:
