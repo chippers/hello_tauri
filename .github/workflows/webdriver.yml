@@ -3,12 +3,9 @@ on: [ push ]
 name: WebDriver
 
 jobs:
-  build_and_test:
-    name: Hello Tauri
+  setup:
+    name: Setup
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        webdriver-test: ["jest", "webdriverio"]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -22,20 +19,66 @@ jobs:
         uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
+          components: clippy, rustfmt
 
+  rustfmt:
+    needs: setup
+    name: Rustfmt
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rustfmt
+        uses: actions-rs/cargo@v1
+        with:
+          command: fmt
+          args: --all --check
+
+  clippy:
+    needs: setup
+    name: Clippy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clippy
+        uses: actions-rs/cargo@v1
+        with:
+          command: clippy
+          args: -- -D warnings
+
+  test:
+    needs: setup
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cargo test
+        uses: actions-rs/cargo@v1
+        with:
+          command: test
+
+  build:
+    needs: setup
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
       - name: Cargo build
         uses: actions-rs/cargo@v1
         with:
           command: build
           args: --release
 
+  webdriver:
+    needs: build
+    name: WebDriver
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        webdriver-test: [ jest, webdriverio ]
+    steps:
       - name: Node v16
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
 
       - name: Yarn install
-        run: yarn
+        run: yarn install
         working-directory: webdriver/
 
       - name: Install tauri-driver
@@ -45,5 +88,5 @@ jobs:
           args: --git "https://github.com/tauri-apps/tauri" --branch "feat/webdriver" tauri-driver
 
       - name: Webdriver test [${{ matrix.webdriver-test }}]
-        run: xvfb-run yarn workspaces run test
+        run: xvfb-run yarn workspace ${{ matrix.webdriver-test }} test
         working-directory: webdriver/
