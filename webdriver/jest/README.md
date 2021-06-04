@@ -1,4 +1,4 @@
-# Hello Tauri WebDriver tests with [Jest]
+# Hello Tauri WebDriver tests with [Jest] [![WebDriver](https://github.com/chippers/hello_tauri/actions/workflows/webdriver.yml/badge.svg)](https://github.com/chippers/hello_tauri/actions/workflows/webdriver.yml)
 
 This example uses [Jest] as the test runner, and the npm package [`webdriverio`] as the WebDriver
 client. This example is purposefully as "dumb" as possible, and starts a new connection for every

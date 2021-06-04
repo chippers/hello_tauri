@@ -1,4 +1,4 @@
-# Hello Tauri WebDriver tests
+# Hello Tauri WebDriver tests [![WebDriver](https://github.com/chippers/hello_tauri/actions/workflows/webdriver.yml/badge.svg)](https://github.com/chippers/hello_tauri/actions/workflows/webdriver.yml)
 
 A collection of different testing projects that utilize WebDriver clients to test the Hello Tauri
 application in this repository.
