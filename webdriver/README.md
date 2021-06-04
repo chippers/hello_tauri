@@ -11,6 +11,5 @@ Run all the projects at once with `yarn workspaces run test`.
 | [`jest/`](jest) | Minimal testing example with some custom code running [Jest] and the [WebdriverIO] client. |
 | [`webdriverio/`](webdriverio) | Example using the [WebdriverIO] client and test runner. |
 
-
 [Jest]: https://jestjs.io/
 [WebdriverIO]: https://webdriver.io/

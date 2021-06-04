@@ -1,5 +1,5 @@
 {
-  "name": "hello_tauri_webdriver_test_webdriverio",
+  "name": "webdriverio",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "scripts": {
