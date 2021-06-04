@@ -29,10 +29,8 @@ The following binaries have had been built with `--release` and have had
 You will need to read the code for more information about this, until `tauri-driver` become pre-alpha with docs.
 
 Check the [GitHub Action workflow file](./.github/workflows/webdriver.yml) for the requirements on the CI and the steps
-taken in order to build and then test the application. Also see the [`webdriver/`](./webdriver/) dir for the actual
-[Jest](https://jestjs.io/) test code which launches the program + a webdriver client for each test. Note: the tests are
-ran with `yarn jest --runInBand` because there can only be 1 application opened at a time that is automated - A
-workaround may come later.
+taken in order to build and then test the application. Also see the [`webdriver/`](webdriver) dir for the actual
+code that runs the WebDriver tests.
 
 You can click the badge at the top of this readme to check the latest WebDriver test results.
 
