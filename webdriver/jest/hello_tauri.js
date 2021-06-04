@@ -4,6 +4,7 @@ const { remote } = require("webdriverio");
 const application = path.resolve(
   __dirname,
   "..",
+  "..",
   "target",
   "release",
   "hello_tauri"
