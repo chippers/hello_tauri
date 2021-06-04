@@ -4,7 +4,7 @@ name: WebDriver
 
 jobs:
   test:
-    name: Setup
+    name: Test
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -61,6 +61,6 @@ jobs:
           command: install
           args: --git "https://github.com/tauri-apps/tauri" --branch "feat/webdriver" tauri-driver
 
-      - name: Webdriver test [${{ matrix.webdriver-test }}]
+      - name: WebDriver
         run: xvfb-run yarn workspace ${{ matrix.webdriver-test }} test
         working-directory: webdriver/
