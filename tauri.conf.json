@@ -3,6 +3,12 @@
     "distDir": "dist"
   },
   "tauri": {
+    "bundle": {
+      "identifier": "sh.chip.hello_tauri",
+      "icon": [
+        "icon.png"
+      ]
+    },
     "allowlist": {
       "all": false
     },

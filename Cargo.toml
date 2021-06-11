@@ -26,3 +26,6 @@ lto = true
 git = "https://github.com/tauri-apps/wry"
 branch = "dev"
 
+[patch.crates-io.tao]
+git = "https://github.com/tauri-apps/tao"
+branch = "dev"
