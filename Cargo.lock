@@ -2308,7 +2308,7 @@ dependencies = [
 [[package]]
 name = "tauri"
 version = "1.0.0-beta.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#1b47cc93d50629e138aa970e5d5f9f346fb57606"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#46d908e9984d78fa3bbea4752f012aa3a080af63"
 dependencies = [
  "attohttpc",
  "bincode",
@@ -2355,7 +2355,7 @@ dependencies = [
 [[package]]
 name = "tauri-codegen"
 version = "1.0.0-beta.0"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#1b47cc93d50629e138aa970e5d5f9f346fb57606"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#46d908e9984d78fa3bbea4752f012aa3a080af63"
 dependencies = [
  "blake3",
  "proc-macro2",
@@ -2371,7 +2371,7 @@ dependencies = [
 [[package]]
 name = "tauri-macros"
 version = "1.0.0-beta.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#1b47cc93d50629e138aa970e5d5f9f346fb57606"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#46d908e9984d78fa3bbea4752f012aa3a080af63"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2382,7 +2382,7 @@ dependencies = [
 [[package]]
 name = "tauri-runtime"
 version = "0.1.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#1b47cc93d50629e138aa970e5d5f9f346fb57606"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#46d908e9984d78fa3bbea4752f012aa3a080af63"
 dependencies = [
  "serde",
  "serde_json",
@@ -2395,7 +2395,7 @@ dependencies = [
 [[package]]
 name = "tauri-runtime-wry"
 version = "0.1.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#1b47cc93d50629e138aa970e5d5f9f346fb57606"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#46d908e9984d78fa3bbea4752f012aa3a080af63"
 dependencies = [
  "ico",
  "infer",
@@ -2410,7 +2410,7 @@ dependencies = [
 [[package]]
 name = "tauri-utils"
 version = "1.0.0-beta.0"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#1b47cc93d50629e138aa970e5d5f9f346fb57606"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#46d908e9984d78fa3bbea4752f012aa3a080af63"
 dependencies = [
  "heck",
  "html5ever",
@@ -2909,8 +2909,3 @@ dependencies = [
  "cc",
  "libc",
 ]
-
-[[patch.unused]]
-name = "wry"
-version = "0.9.4"
-source = "git+https://github.com/tauri-apps/wry?branch=dev#6a1475ff76cbdd699df9329ab8e2181c2a794c96"
