@@ -8,8 +8,7 @@ Run all the projects at once with `yarn workspaces run test`.
 ## Examples
 | dir | Description |
 | --- | ----------- |
-| [`jest/`](jest) | Minimal testing example with some custom code running [Jest] and the [WebdriverIO] client. |
 | [`webdriverio/`](webdriverio) | Example using the [WebdriverIO] client and test runner. |
+| [`selenium/`](selenium) | **(disabled)** Minimal testing example with `mocha`, `chai`, and `selenium-webdriver`. |
 
-[Jest]: https://jestjs.io/
 [WebdriverIO]: https://webdriver.io/

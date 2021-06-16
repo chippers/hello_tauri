@@ -1,13 +1,15 @@
 {
-  "name": "jest",
+  "name": "selenium",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
-    "test": "jest --runInBand",
+    "test": "mocha",
     "format": "prettier --write \"./**/*.js\""
   },
   "dependencies": {
-    "webdriverio": "^7.7.2"
+    "chai": "^4.3.4",
+    "mocha": "^9.0.0",
+    "selenium-webdriver": "^4.0.0-beta.4"
   }
 }

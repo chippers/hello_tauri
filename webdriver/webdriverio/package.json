@@ -2,6 +2,7 @@
   "name": "webdriverio",
   "version": "1.0.0",
   "license": "Apache-2.0",
+  "private": true,
   "scripts": {
     "test": "wdio run wdio.conf.js",
     "format": "prettier --write \"./**/*.js\""

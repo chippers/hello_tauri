@@ -5,12 +5,11 @@
   "license": "Apache-2.0",
   "private": true,
   "workspaces": [
-    "jest",
+    "selenium",
     "webdriverio"
   ],
   "dependencies": {
     "@wdio/cli": "^7.7.3",
-    "jest": "^27.0.3",
     "prettier": "^2.3.0"
   }
 }
