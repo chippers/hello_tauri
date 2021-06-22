@@ -1,5 +1,6 @@
 const os = require("os");
 const path = require("path");
+const { expect } = require("chai");
 const { spawn, spawnSync } = require("child_process");
 const { Builder, By, Capabilities } = require("selenium-webdriver");
 
@@ -33,7 +34,7 @@ before(async () => {
 
   const capabilities = new Capabilities();
   capabilities.set("tauri:options", { application });
-  capabilities.setBrowserName("tauri");
+  capabilities.setBrowserName("wry");
 
   // start the webdriver client
   driver = await new Builder()
@@ -43,21 +44,32 @@ before(async () => {
 });
 
 after(async () => {
-  // kill the tauri-driver process
-  tauriDriver.kill();
-
   // stop the webdriver session
   await driver.quit();
+
+  // kill the tauri-driver process
+  tauriDriver.kill();
 });
 
 describe("Hello Tauri", () => {
   it("should be cordial", async () => {
     const text = await driver.findElement(By.css("body > h1")).getText();
-    expect(text).toMatch(/^[hH]ello/);
+    expect(text).to.match(/^[hH]ello/);
   });
 
   it("should be excited", async () => {
     const text = await driver.findElement(By.css("body > h1")).getText();
-    expect(text).toMatch(/!$/);
+    expect(text).to.match(/!$/);
+  });
+
+  it("should be easy on the eyes", async () => {
+    // selenium returns color css values as rgb(r, g, b)
+    const text = await driver.findElement(By.css("body")).getCssValue("background-color");
+
+    const rgb = text.match(/^rgb\((?<r>\d+), (?<g>\d+), (?<b>\d+)\)$/).groups;
+    expect(rgb).to.have.all.keys('r','g','b');
+
+    const luma =  0.2126 * rgb.r + 0.7152 * rgb.g  + 0.0722 * rgb.b ;
+    expect(luma).to.be.lessThan(100)
   });
 });
