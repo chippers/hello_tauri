@@ -21,7 +21,10 @@ let driver;
 // keep track of the tauri-driver process we start
 let tauriDriver;
 
-before(async () => {
+before(async function() {
+  // set timeout to 2 minutes to allow the program to build if it needs to
+  this.timeout(120000)
+
   // ensure the program has been built
   spawnSync("cargo", ["build", "--release"]);
 
@@ -43,7 +46,7 @@ before(async () => {
     .build();
 });
 
-after(async () => {
+after(async function() {
   // stop the webdriver session
   await driver.quit();
 
