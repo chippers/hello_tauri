@@ -9,6 +9,6 @@ Run all the projects at once with `yarn workspaces run test`.
 | dir | Description |
 | --- | ----------- |
 | [`webdriverio/`](webdriverio) | Example using the [WebdriverIO] client and test runner. |
-| [`selenium/`](selenium) | **(disabled)** Minimal testing example with `mocha`, `chai`, and `selenium-webdriver`. |
+| [`selenium/`](selenium) | Minimal testing example with `mocha`, `chai`, and `selenium-webdriver`. |
 
 [WebdriverIO]: https://webdriver.io/
