@@ -20,12 +20,3 @@ codegen-units = 1
 panic = "abort"
 opt-level = "s"
 lto = true
-
-# use the custom branch in wry
-[patch.crates-io.wry]
-git = "https://github.com/tauri-apps/wry"
-rev = "6a1475ff76cbdd699df9329ab8e2181c2a794c96"
-
-[patch.crates-io.tao]
-git = "https://github.com/tauri-apps/tao"
-branch = "dev"
