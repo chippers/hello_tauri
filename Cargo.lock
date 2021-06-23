@@ -2272,9 +2272,9 @@ dependencies = [
 
 [[package]]
 name = "tao"
-version = "0.3.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9f2b1bbb775ce0235a26b51459c8a675da81eb95dfcaa16411be963661ef13f1"
+checksum = "ecd33dd36dd20ca8a1222c770b13390b04c1a792a7cdf89ee29675d94f172ce5"
 dependencies = [
  "bitflags",
  "cairo-rs",
@@ -2322,7 +2322,7 @@ dependencies = [
 [[package]]
 name = "tauri"
 version = "1.0.0-beta.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#9adf837411cd66379637c0cc2684226fc631c2a4"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#16c03ed42a2128cc8812b97e1a6682972df2d35a"
 dependencies = [
  "attohttpc",
  "bincode",
@@ -2369,7 +2369,7 @@ dependencies = [
 [[package]]
 name = "tauri-codegen"
 version = "1.0.0-beta.0"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#9adf837411cd66379637c0cc2684226fc631c2a4"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#16c03ed42a2128cc8812b97e1a6682972df2d35a"
 dependencies = [
  "blake3",
  "proc-macro2",
@@ -2385,7 +2385,7 @@ dependencies = [
 [[package]]
 name = "tauri-macros"
 version = "1.0.0-beta.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#9adf837411cd66379637c0cc2684226fc631c2a4"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#16c03ed42a2128cc8812b97e1a6682972df2d35a"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2396,7 +2396,7 @@ dependencies = [
 [[package]]
 name = "tauri-runtime"
 version = "0.1.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#9adf837411cd66379637c0cc2684226fc631c2a4"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#16c03ed42a2128cc8812b97e1a6682972df2d35a"
 dependencies = [
  "serde",
  "serde_json",
@@ -2409,7 +2409,7 @@ dependencies = [
 [[package]]
 name = "tauri-runtime-wry"
 version = "0.1.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#9adf837411cd66379637c0cc2684226fc631c2a4"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#16c03ed42a2128cc8812b97e1a6682972df2d35a"
 dependencies = [
  "ico",
  "infer",
@@ -2424,7 +2424,7 @@ dependencies = [
 [[package]]
 name = "tauri-utils"
 version = "1.0.0-beta.0"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#9adf837411cd66379637c0cc2684226fc631c2a4"
+source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#16c03ed42a2128cc8812b97e1a6682972df2d35a"
 dependencies = [
  "heck",
  "html5ever",
