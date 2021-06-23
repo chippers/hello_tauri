@@ -11,7 +11,7 @@ default-features = false
 
 [dependencies.tauri]
 git = "https://github.com/tauri-apps/tauri"
-branch = "feat/webdriver"
+branch = "dev"
 features = [ "wry", "custom-protocol" ]
 
 [profile.release]

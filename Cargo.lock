@@ -2366,7 +2366,7 @@ dependencies = [
 [[package]]
 name = "tauri"
 version = "1.0.0-beta.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#e0bf6dce24bca3b952f7bc71f53d5884937db082"
+source = "git+https://github.com/tauri-apps/tauri?branch=dev#be76fb1dfe73a1605cc2ad246418579f4c2e1999"
 dependencies = [
  "attohttpc",
  "bincode",
@@ -2413,7 +2413,7 @@ dependencies = [
 [[package]]
 name = "tauri-codegen"
 version = "1.0.0-beta.0"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#e0bf6dce24bca3b952f7bc71f53d5884937db082"
+source = "git+https://github.com/tauri-apps/tauri?branch=dev#be76fb1dfe73a1605cc2ad246418579f4c2e1999"
 dependencies = [
  "blake3",
  "proc-macro2",
@@ -2429,7 +2429,7 @@ dependencies = [
 [[package]]
 name = "tauri-macros"
 version = "1.0.0-beta.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#e0bf6dce24bca3b952f7bc71f53d5884937db082"
+source = "git+https://github.com/tauri-apps/tauri?branch=dev#be76fb1dfe73a1605cc2ad246418579f4c2e1999"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2440,7 +2440,7 @@ dependencies = [
 [[package]]
 name = "tauri-runtime"
 version = "0.1.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#e0bf6dce24bca3b952f7bc71f53d5884937db082"
+source = "git+https://github.com/tauri-apps/tauri?branch=dev#be76fb1dfe73a1605cc2ad246418579f4c2e1999"
 dependencies = [
  "serde",
  "serde_json",
@@ -2453,7 +2453,7 @@ dependencies = [
 [[package]]
 name = "tauri-runtime-wry"
 version = "0.1.1"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#e0bf6dce24bca3b952f7bc71f53d5884937db082"
+source = "git+https://github.com/tauri-apps/tauri?branch=dev#be76fb1dfe73a1605cc2ad246418579f4c2e1999"
 dependencies = [
  "ico",
  "infer",
@@ -2468,7 +2468,7 @@ dependencies = [
 [[package]]
 name = "tauri-utils"
 version = "1.0.0-beta.0"
-source = "git+https://github.com/tauri-apps/tauri?branch=feat/webdriver#e0bf6dce24bca3b952f7bc71f53d5884937db082"
+source = "git+https://github.com/tauri-apps/tauri?branch=dev#be76fb1dfe73a1605cc2ad246418579f4c2e1999"
 dependencies = [
  "heck",
  "html5ever",
