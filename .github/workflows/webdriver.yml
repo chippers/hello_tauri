@@ -65,7 +65,7 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: install
-          args: --git "https://github.com/tauri-apps/tauri" --branch "feat/webdriver" tauri-driver
+          args: tauri-driver
 
       - name: WebDriver
         run: xvfb-run yarn workspace ${{ matrix.webdriver-test }} test
