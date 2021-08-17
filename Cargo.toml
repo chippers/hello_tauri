@@ -5,18 +5,21 @@ authors = ["chip reed <chip@chip.sh>"]
 license = "Apache-2.0"
 edition = "2018"
 
-[build-dependencies.tauri-build]
-version = "1.0.0-beta.0"
-default-features = false
+# Needed to set up some things for Tauri at build time
+[build-dependencies]
+tauri-build = "1.0.0-beta.4"
 
-[dependencies.tauri]
-git = "https://github.com/tauri-apps/tauri"
-branch = "dev"
-features = [ "wry", "custom-protocol" ]
+# The actual Tauri dependency, along with `custom-protocol` to serve the pages.
+[dependencies]
+tauri = { version = "1.0.0-beta.6", features = ["custom-protocol"] }
 
+# Make --release build a binary that is small (opt-level = "s") and fast (lto = true).
 [profile.release]
 incremental = false
 codegen-units = 1
 panic = "abort"
 opt-level = "s"
 lto = true
+
+[patch.crates-io]
+wry = { path = "../../tauri-apps/wry" }
