@@ -22,4 +22,4 @@ opt-level = "s"
 lto = true
 
 [patch.crates-io]
-wry = { path = "../../tauri-apps/wry" }
+wry = { git = "https://github.com/tauri-apps/wry", branch = "dev" }
