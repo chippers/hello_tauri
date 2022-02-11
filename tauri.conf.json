@@ -1,5 +1,6 @@
 {
   "build": {
+    "devPath": "dist",
     "distDir": "dist"
   },
   "tauri": {
