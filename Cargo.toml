@@ -7,7 +7,7 @@ edition = "2018"
 
 # Needed to set up some things for Tauri at build time
 [build-dependencies]
-tauri-build = "1.0.0-rc.0"
+tauri-build = { version = "1.0.0-rc.0", features = [] }
 
 # The actual Tauri dependency, along with `custom-protocol` to serve the pages.
 [dependencies]
