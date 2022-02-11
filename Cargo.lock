@@ -3072,7 +3072,9 @@ dependencies = [
 
 [[package]]
 name = "wry"
-version = "0.12.1"
+version = "0.12.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0f9549393a3917b5303277abb0267f8eecf9fd629b25f1c04e5284aa58b61915"
 dependencies = [
  "cocoa",
  "core-graphics 0.22.2",
@@ -3080,6 +3082,7 @@ dependencies = [
  "gio",
  "glib",
  "gtk",
+ "http",
  "libc",
  "log",
  "objc",
@@ -3160,3 +3163,8 @@ dependencies = [
  "cc",
  "libc",
 ]
+
+[[patch.unused]]
+name = "wry"
+version = "0.13.1"
+source = "git+https://github.com/tauri-apps/wry?branch=dev#f874ec5a5fc69a33248788090b286d08cf4149d5"

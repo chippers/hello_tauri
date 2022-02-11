@@ -20,6 +20,3 @@ codegen-units = 1
 panic = "abort"
 opt-level = "s"
 lto = true
-
-[patch.crates-io]
-wry = { git = "https://github.com/tauri-apps/wry", branch = "dev" }
