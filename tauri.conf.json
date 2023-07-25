@@ -7,7 +7,8 @@
     "bundle": {
       "identifier": "sh.chip.hello-tauri",
       "icon": [
-        "icon.png"
+        "icons/icon.png",
+        "icons/icon.ico"
       ]
     },
     "allowlist": {
