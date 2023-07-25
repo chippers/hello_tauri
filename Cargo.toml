@@ -1,5 +1,5 @@
 [package]
-name = "hello_tauri"
+name = "hello-tauri"
 version = "0.1.0"
 authors = ["chip reed <chip@chip.sh>"]
 license = "Apache-2.0"

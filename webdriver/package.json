@@ -1,5 +1,5 @@
 {
-  "name": "hello_tauri_webdriver_tests",
+  "name": "hello-tauri-webdriver-tests",
   "version": "1.0.0",
   "description": "A workspace containing different ways to test Tauri applications with a WebDriver client.",
   "license": "Apache-2.0",
