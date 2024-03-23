@@ -4,7 +4,7 @@
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
-    "test": "wdio run wdio.conf.js",
+    "test": "TAURI_AUTOMATION=true wdio run wdio.conf.js",
     "format": "prettier --write \"./**/*.js\""
   },
   "devDependencies": {
